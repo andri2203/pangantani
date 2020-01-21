@@ -32,6 +32,77 @@
         <a href="index3.html" class="nav-link">Home</a>
       </li>
     </ul>
+     <!-- Right navbar links -->
+     <ul class="navbar-nav ml-auto">
+            <!-- Messages Dropdown Menu -->
+            <li class="nav-item dropdown">
+              <a class="nav-link" data-toggle="dropdown" href="#">
+                <i class="far fa-comments"></i>
+                <span class="badge badge-danger navbar-badge">3</span>
+              </a>
+              <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+                <a href="#" class="dropdown-item">
+                  <!-- Message Start -->
+                  <div class="media">
+                    <img src="./dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle">
+                    <div class="media-body">
+                      <h3 class="dropdown-item-title">
+                        Brad Diesel
+                        <span class="float-right text-sm text-danger"><i class="fas fa-star"></i></span>
+                      </h3>
+                      <p class="text-sm">Call me whenever you can...</p>
+                      <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+                    </div>
+                  </div>
+                  <!-- Message End -->
+                </a>
+    
+                <div class="dropdown-divider"></div>
+                <a href="#" class="dropdown-item dropdown-footer">See All Messages</a>
+              </div>
+            </li>
+            <!-- Notifications Dropdown Menu -->
+            <li class="nav-item dropdown">
+              <a class="nav-link" data-toggle="dropdown" href="#">
+                <i class="far fa-bell"></i>
+                <span class="badge badge-warning navbar-badge">15</span>
+              </a>
+              <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+                <span class="dropdown-item dropdown-header">15 Notifications</span>
+                <div class="dropdown-divider"></div>
+                <a href="#" class="dropdown-item">
+                  <i class="fas fa-envelope mr-2"></i> new messages
+                  <span class="float-right text-muted text-sm">3 mins</span>
+                </a>
+
+                <div class="dropdown-divider"></div>
+                <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown user-menu">
+              <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+                <img src="./dist/img/user2-160x160.jpg" class="user-image img-circle elevation-2" alt="User Image">
+                <span class="d-none d-md-inline">Alexander Pierce</span>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+                <!-- User image -->
+                <li class="user-header bg-primary">
+                  <img src="./dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+      
+                  <p>
+                    Alexander Pierce - Web Developer
+                    <small>Member since Nov. 2012</small>
+                  </p>
+                </li>
+                <!-- Menu Footer-->
+                <li class="user-footer">
+                  <a href="#" class="btn btn-default btn-flat">Profile</a>
+                  <a href="#" class="btn btn-default btn-flat float-right">Sign out</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
   </nav>
   <!-- /.navbar -->
 
@@ -53,89 +124,52 @@
 
           <!-- Menu Dashboard -->
           <li class="nav-item has-treeview menu-open">
-            <a href="#" class="nav-link active">
-              <i class="nav-icon fas fa-tachometer-alt"></i>
-              <p>
-                Dashboard
-                <i class="right fas fa-angle-left"></i>
-              </p>
+              <a href="penjual-dashboard.html" class="nav-link ">
+                <i class="nav-icon fas fa-tachometer-alt"></i>
+                <p>
+                  Dashboard
+                  <i class="right fas fa-angle-left"></i>
+                </p>
+              </a>
+            </li>
+  
+            <!-- Menu Penjulana Produk -->
+            <li class="nav-item has-treeview">
+              <a href="#" class="nav-link active">
+                <i class="nav-icon fas fa-server"></i>
+                <p>
+                  Penjualaan
+                  <i class="right fas fa-angle-left"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="tambah-data-penjualan.html" class="nav-link active">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Tambah Produk</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="data_penjualan.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Daftar Produk</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+        
+          <li class="nav-item">
+            <a href="obrolan.html" class="nav-link">
+            <i class="fas fa-comments nav-icon"></i>
+                    
+              <p>Obrolan</p>
             </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Aktifasi Akun Penjual</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Aktifasi Akun Pembeli</p>
-                </a>
-              </li>
-            </ul>
           </li>
-
-          <!-- Menu Master Data -->
-          <li class="nav-item has-treeview">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-server"></i>
-              <p>
-                Master Data
-                <i class="right fas fa-angle-left"></i>
-              </p>
+          <li class="nav-item">
+            <a href="profile.html" class="nav-link">
+              <i class="fas fa-users nav-icon"></i>
+              <p>Profile</p>
             </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Data Komoditas</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Data Ketentuan</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Data Inflasi</p>
-                </a>
-              </li>
-            </ul>
-          </li>
-
-          <!-- Laporan -->
-          <li class="nav-item has-treeview">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-file-alt"></i>
-              <p>
-                Master Laporan
-                <i class="right fas fa-angle-left"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Laporan Komoditas</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Laporan Ketentuan</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Laporan Inflasi</p>
-                </a>
-              </li>
-            </ul>
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link">
@@ -237,11 +271,11 @@
 
         <!-- Chart Data Komoditas -->
         
-        <div class="row">
-            <div class="col-md-12">
+        <div class="row justify-content-center">
+            <div class="col-md-10">
               <div class="card">
                 <div class="card-header">
-                  <h5 class="card-title">Monthly Recap Report</h5>
+                  <h5 class="card-title">Tambah Data Penjualaan</h5>
   
                   <div class="card-tools">
                     <button type="button" class="btn btn-tool" data-card-widget="collapse">
@@ -264,112 +298,52 @@
                     </button>
                   </div>
                 </div>
-                <!-- /.card-header -->
-                <div class="card-body">
-                  <div class="row">
-                    <div class="col-md-8">
-                      <p class="text-center">
-                        <strong>Sales: 1 Jan, 2014 - 30 Jul, 2014</strong>
-                      </p>
-  
-                      <div class="chart">
-                        <!-- Sales Chart Canvas -->
-                        <canvas id="salesChart" height="180" style="height: 180px;"></canvas>
+                  
+            <div class="card-body">
+                <!-- general form elements -->
+                <form role="form">
+                    <div class="card-body">
+                      <div class="form-group">
+                        <label for="nama_produk">Nama Produk</label>
+                        <input type="text" class="form-control" id="nama_produk" placeholder="Masukkan Nama Produk">
                       </div>
-                      <!-- /.chart-responsive -->
-                    </div>
-                    <!-- /.col -->
-                    <div class="col-md-4">
-                      <p class="text-center">
-                        <strong>Goal Completion</strong>
-                      </p>
-  
-                      <div class="progress-group">
-                        Add Products to Cart
-                        <span class="float-right"><b>160</b>/200</span>
-                        <div class="progress progress-sm">
-                          <div class="progress-bar bg-primary" style="width: 80%"></div>
+                      <div class="form-group">
+                          <label for="jenis_produk">Jenis Produk</label>
+                          <input type="text" class="form-control" id="jenis_produk" placeholder="Masukkan Jenis Produk">
+                        </div>
+                        <div class="form-group">
+                            <label for="kuantitas_produk">Kuantitas Produk</label>
+                            <input type="number" class="form-control" id="kuantitas_produk" placeholder="Masukkan Kuantitas Produk">
+                          </div>
+                          <div class="form-group">
+                              <label for="harga_produk">Harga Produk</label>
+                              <input type="number" class="form-control" id="harga_produk" placeholder="Masukkan Harga Produk">
+                            </div>
+                            <div class="form-group">
+                                <label>Detail Produk</label>
+                                <textarea class="form-control" rows="3" placeholder="MasukkanDetail Produk"></textarea>
+                              </div>
+                            
+                      <div class="form-group">
+                        <label for="input_file">File input</label>
+                        <div class="input-group">
+                          <div class="custom-file">
+                            <input type="file" class="custom-file-input" id="input_file">
+                            <label class="custom-file-label" for="exampleInputFile">Choose file</label>
+                          </div>
+                          <div class="input-group-append">
+                            <span class="input-group-text" id="">Upload</span>
+                          </div>
                         </div>
                       </div>
-                      <!-- /.progress-group -->
+                    </div>
+                    <!-- /.card-body -->
   
-                      <div class="progress-group">
-                        Complete Purchase
-                        <span class="float-right"><b>310</b>/400</span>
-                        <div class="progress progress-sm">
-                          <div class="progress-bar bg-danger" style="width: 75%"></div>
-                        </div>
-                      </div>
-  
-                      <!-- /.progress-group -->
-                      <div class="progress-group">
-                        <span class="progress-text">Visit Premium Page</span>
-                        <span class="float-right"><b>480</b>/800</span>
-                        <div class="progress progress-sm">
-                          <div class="progress-bar bg-success" style="width: 60%"></div>
-                        </div>
-                      </div>
-  
-                      <!-- /.progress-group -->
-                      <div class="progress-group">
-                        Send Inquiries
-                        <span class="float-right"><b>250</b>/500</span>
-                        <div class="progress progress-sm">
-                          <div class="progress-bar bg-warning" style="width: 50%"></div>
-                        </div>
-                      </div>
-                      <!-- /.progress-group -->
+                    <div class="card-footer">
+                      <button type="submit" class="btn btn-primary">Tambah Data</button>
                     </div>
-                    <!-- /.col -->
-                  </div>
-                  <!-- /.row -->
-                </div>
-                <!-- ./card-body -->
-                <div class="card-footer">
-                  <div class="row">
-                    <div class="col-sm-3 col-6">
-                      <div class="description-block border-right">
-                        <span class="description-percentage text-success"><i class="fas fa-caret-up"></i> 17%</span>
-                        <h5 class="description-header">$35,210.43</h5>
-                        <span class="description-text">TOTAL REVENUE</span>
-                      </div>
-                      <!-- /.description-block -->
-                    </div>
-                    <!-- /.col -->
-                    <div class="col-sm-3 col-6">
-                      <div class="description-block border-right">
-                        <span class="description-percentage text-warning"><i class="fas fa-caret-left"></i> 0%</span>
-                        <h5 class="description-header">$10,390.90</h5>
-                        <span class="description-text">TOTAL COST</span>
-                      </div>
-                      <!-- /.description-block -->
-                    </div>
-                    <!-- /.col -->
-                    <div class="col-sm-3 col-6">
-                      <div class="description-block border-right">
-                        <span class="description-percentage text-success"><i class="fas fa-caret-up"></i> 20%</span>
-                        <h5 class="description-header">$24,813.53</h5>
-                        <span class="description-text">TOTAL PROFIT</span>
-                      </div>
-                      <!-- /.description-block -->
-                    </div>
-                    <!-- /.col -->
-                    <div class="col-sm-3 col-6">
-                      <div class="description-block">
-                        <span class="description-percentage text-danger"><i class="fas fa-caret-down"></i> 18%</span>
-                        <h5 class="description-header">1200</h5>
-                        <span class="description-text">GOAL COMPLETIONS</span>
-                      </div>
-                      <!-- /.description-block -->
-                    </div>
-                  </div>
-                  <!-- /.row -->
-                </div>
-                <!-- /.card-footer -->
+                  </form>
               </div>
-              <!-- /.card -->
-            </div>
-            <!-- /.col -->
         </div>
         <!-- /.row -->
 
